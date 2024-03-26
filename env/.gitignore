@@ -1,0 +1,6 @@
+# Ignore system-specific directories
+System Volume Information/
+
+
+# Ignore temporary files
+DumpStack.log.tmp
