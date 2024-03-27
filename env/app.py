@@ -3,6 +3,8 @@ from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 
 app = Flask(__name__)
+app.secret_key = '10698314cfa164ad26fe752e6983945c931de2e45c308f3b'  # Add a secret key for session management
+
 app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///Todo.db"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
@@ -16,14 +18,13 @@ class Todo(db.Model):
 
     def __repr__(self):
         return f"{self.sno} - {self.title}"
-    
+
 @app.route('/complete/<int:sno>', methods=['POST'])
 def complete_todo(sno):
     todo = Todo.query.get_or_404(sno)
     todo.tick = True  # Update the tick attribute to indicate completion
     db.session.commit()
     return redirect("/")
-
 
 @app.route('/', methods=['GET', 'POST'])
 def hello_world():
@@ -35,7 +36,12 @@ def hello_world():
         db.session.commit()
 
     allTodo = Todo.query.all()
-    return render_template('index.html', allTodo=allTodo)
+    
+    # Check if there are no todos and show a message for new users
+    if not allTodo:
+        return render_template('index.html', allTodo=allTodo, new_user=True)
+    else:
+        return render_template('index.html', allTodo=allTodo)
 
 @app.route('/about')
 def about():
