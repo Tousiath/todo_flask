@@ -1,9 +1,9 @@
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect, session
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 
 app = Flask(__name__)
-app.secret_key = '10698314cfa164ad26fe752e6983945c931de2e45c308f3b'  # Add a secret key for session management
+app.secret_key = 'your_secret_key'  # Add a secret key for session management
 
 app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///Todo.db"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
@@ -28,17 +28,20 @@ def complete_todo(sno):
 
 @app.route('/', methods=['GET', 'POST'])
 def hello_world():
+    if 'new_user' not in session:
+        session['new_user'] = True
+
     if request.method == 'POST':
         title = request.form['title']
         desc = request.form['desc']
         todo = Todo(title=title, desc=desc)
         db.session.add(todo)
         db.session.commit()
+        session['new_user'] = False
 
     allTodo = Todo.query.all()
     
-    # Check if there are no todos and show a message for new users
-    if not allTodo:
+    if session['new_user']:
         return render_template('index.html', allTodo=allTodo, new_user=True)
     else:
         return render_template('index.html', allTodo=allTodo)
@@ -69,5 +72,5 @@ def delete(sno):
     db.session.commit()
     return redirect("/")
 
-# if __name__ == "__main__":
-#     app.run(debug=True, port=8000)
+if __name__ == "__main__":
+    app.run(debug=True, port=8000)
