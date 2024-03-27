@@ -39,9 +39,9 @@ def hello_world():
     
     # Check if there are no todos and show a message for new users
     if not allTodo:
-        return render_template('base.html', allTodo=allTodo, new_user=True)
+        return render_template('index.html', allTodo=allTodo, new_user=True)
     else:
-        return render_template('base.html', allTodo=allTodo)
+        return render_template('index.html', allTodo=allTodo)
 
 @app.route('/about')
 def about():
