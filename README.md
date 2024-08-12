@@ -34,16 +34,24 @@ This file is used for deploying the application on platforms like Heroku. It spe
 
 ## **3. Features**
 Add Task: Users can add a new task with a title and description.
+
 View Tasks: The home page displays all the tasks stored in the database.
+
 Update Task: Users can update the details of a task.
+
 Delete Task: Users can delete a task from the list.
 
 ## **4. Usage**
 Home Page: Add, view, update, or delete tasks.
+
 About Page: Information about the application.
+
 **Output Screens**
 
-## **7. Conclusion**
+
+## **5. Conclusion**
 This ToDo application is a basic example of using Flask to create a CRUD (Create, Read, Update, Delete) application. It's a great starting point for learning about web development with Flask and SQLAlchemy.
 
-Happy coding and keep exploring! 😊
+---
+
+**Happy coding and keep exploring! 😊😊**
