@@ -18,24 +18,24 @@ ToDo_Application
 └── Procfile         # For deploying to Heroku or similar platforms
 ```
 
-**app.py**
+
+**app.py**  
 This file contains the main code for the Flask application. It defines routes for adding, viewing, updating, and deleting tasks. The application interacts with an SQLite database using SQLAlchemy.
 
-
-**static/**
+**static/**  
 This directory holds the static files like CSS for styling, JavaScript for interactivity, and any images required by the web application.
 
+**templates/**  
+This directory contains HTML files used by Flask to render web pages. The main pages are `index.html`, `about.html`, and `update.html`.
 
-**templates/**
-This directory contains HTML files used by Flask to render web pages. The main pages are index.html, about.html, and update.html.
+**Todo.db**  
+This is the SQLite database file where all the tasks are stored. It contains the `Todo` table with fields like `sno`, `title`, `desc`, and `date_created`.
 
-
-**Todo.db**
-This is the SQLite database file where all the tasks are stored. It contains the Todo table with fields like sno, title, desc, and date_created.
-
-
-**Procfile**
+**Procfile**  
 This file is used for deploying the application on platforms like Heroku. It specifies the commands that are run by the application server.
+
+**app.py**
+This file contains the main code for the Flask application. It defines routes for adding, viewing, updating, and deleting tasks. The application interacts with an SQLite database using SQLAlchemy.
 
 
 ## **3. Features**
