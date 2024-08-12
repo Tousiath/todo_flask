@@ -35,6 +35,7 @@ This is the SQLite database file where all the tasks are stored. It contains the
 This file is used for deploying the application on platforms like Heroku. It specifies the commands that are run by the application server.
 
 **app.py**
+
 This
 
 
