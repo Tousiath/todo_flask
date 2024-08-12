@@ -35,7 +35,7 @@ This is the SQLite database file where all the tasks are stored. It contains the
 This file is used for deploying the application on platforms like Heroku. It specifies the commands that are run by the application server.
 
 **app.py**
-This file contains the main code for the Flask application. It defines routes for adding, viewing, updating, and deleting tasks. The application interacts with an SQLite database using SQLAlchemy.
+This
 
 
 ## **3. Features**
