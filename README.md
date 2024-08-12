@@ -50,9 +50,9 @@ Home Page: Add, view, update, or delete tasks.
 About Page: Information about the application.
 
 ### **Output Screens**
-![result1](https://github.com/user-attachments/assets/289f92eb-4982-41b4-ba0b-bc76651afc89)
-
 ![result3](https://github.com/user-attachments/assets/0dba6fe8-6533-4f73-8b96-a73073a9bf93)
+
+![result1](https://github.com/user-attachments/assets/289f92eb-4982-41b4-ba0b-bc76651afc89)
 
 
 ## **5. Conclusion**
