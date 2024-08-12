@@ -34,27 +34,6 @@ This is the SQLite database file where all the tasks are stored. It contains the
 **Procfile**  
 This file is used for deploying the application on platforms like Heroku. It specifies the commands that are run by the application server.
 
-**app.py**  
-This file contains the main code for the Flask application. It defines routes for adding, viewing, updating, and deleting tasks. The application interacts with an SQLite database using SQLAlchemy.
-
-**static/**  
-This directory holds the static files like CSS for styling, JavaScript for interactivity, and any images required by the web application.
-
-**templates/**  
-This directory contains HTML files used by Flask to render web pages. The main pages are `index.html`, `about.html`, and `update.html`.
-
-**Todo.db**  
-This is the SQLite database file where all the tasks are stored. It contains the `Todo` table with fields like `sno`, `title`, `desc`, and `date_created`.
-
-**Procfile**  
-This file is used for deploying the application on platforms like Heroku. It specifies the commands that are run by the application server.
-
-**all**
-how are you
-
-
-
-
 
 ## **3. Features**
 Add Task: Users can add a new task with a title and description.
@@ -71,6 +50,8 @@ Home Page: Add, view, update, or delete tasks.
 About Page: Information about the application.
 
 ### **Output Screens**
+![result1](https://github.com/user-attachments/assets/289f92eb-4982-41b4-ba0b-bc76651afc89)
+![result2](https://github.com/user-attachments/assets/62f88911-a84d-436f-93fe-edc348797151)
 
 
 ## **5. Conclusion**
