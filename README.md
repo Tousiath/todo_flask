@@ -55,7 +55,8 @@ About Page: Information about the application.
 ![result1](https://github.com/user-attachments/assets/289f92eb-4982-41b4-ba0b-bc76651afc89)
 
 **update page**
-![Screenshot (627)](https://github.com/user-attachments/assets/f8d2b613-6bc2-49f3-9019-1085f3e8c1ea)
+
+![Screenshot (629)](https://github.com/user-attachments/assets/65df0af5-a5da-4d90-8737-5ecc74e43a56)
 
 
 ## **5. Conclusion**
