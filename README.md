@@ -54,6 +54,9 @@ About Page: Information about the application.
 
 ![result1](https://github.com/user-attachments/assets/289f92eb-4982-41b4-ba0b-bc76651afc89)
 
+**update page**
+![Screenshot (627)](https://github.com/user-attachments/assets/f8d2b613-6bc2-49f3-9019-1085f3e8c1ea)
+
 
 ## **5. Conclusion**
 This ToDo application is a basic example of using Flask to create a CRUD (Create, Read, Update, Delete) application. It's a great starting point for learning about web development with Flask and SQLAlchemy.
